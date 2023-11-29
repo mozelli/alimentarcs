@@ -1,0 +1,24 @@
+section.container {
+    padding: 100px 0;
+    background-color: var(--secondary);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1 {
+    max-width: 50%;
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.content h2 {
+    max-width: 50%;
+    margin-top: 20px;
+}
+
+.content button {
+    width: 25%;
+}
