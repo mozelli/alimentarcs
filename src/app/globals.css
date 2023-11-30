@@ -35,3 +35,13 @@ p, button, a, span {
     font-family: var(--text-font);
     margin: 0;
 }
+
+button {
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+img {
+    margin: 0;
+}
