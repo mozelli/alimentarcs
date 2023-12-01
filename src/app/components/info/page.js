@@ -25,7 +25,7 @@ export default function Info() {
               <p>
                 Cada página é uma oportunidade de reinventar sua abordagem à alimentação, proporcionando não apenas refeições, mas uma <strong>experiência transformadora</strong>.
               </p>
-              <button href="/">Quero grantir meu ebook</button>
+              <button href="/">Quero garantir meu ebook</button>
             </div>
           </div>
         </div>

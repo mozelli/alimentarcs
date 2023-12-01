@@ -1,12 +1,11 @@
 section.container {
-
+    padding: var(--section-padding-y) var(--section-padding-x);
 }
 
 .content {
-    padding: 100px 0;
     display: flex;
-    align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .content img {
@@ -16,11 +15,11 @@ section.container {
     padding-right: 40px;
 }
 
-.content.imageInfo {
+.content .imageInfo {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 51%;
+    width: 50%;
 }
 
 .imageInfo h2 {
@@ -57,3 +56,28 @@ section.container {
   .content button:hover {
     transform: scale(1.1);
   }
+
+  @media only screen and (max-width: 768px) {
+    .content img {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    .content .imageInfo {
+      width: 100%;
+  }
+
+    .imageInfo h2 {
+      margin-top: 30px;
+      color: var(--primary);
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    .content button {
+      font-size: 16px;
+      padding: 15px 40px;
+      width: 100%;
+    }
+    
+   }

@@ -2,10 +2,10 @@ section.container {
     background-image: url("../../../images/background-section-1-optimized.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+    padding: var(--section-padding-y) var(--section-padding-x);
 }
 
 .content {
-    padding: 100px 0;
     display: flex;
     flex-direction: column;
 }
@@ -24,9 +24,9 @@ section.container {
 .content button {
   width: fit-content;
   display: inline-block;
-  padding: 20px 20px;
+  padding: 20px 50px;
   margin-top: 30px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   text-decoration: none;
   background-color: var(--accent);
@@ -41,14 +41,32 @@ section.container {
   transform: scale(1.1);
 }
 
+@media only screen and (max-width: 768px) {
 
-/* .content button {
-    display: block;
-    width: fit-content;
-    
-    padding: 20px 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: var(--accent);
-    color: var(--white);
-} */
+  section.container {
+    background-image: url("../../../../public/background-section-1-mobile-optimized.jpg");
+    min-height: 650px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content h1 {
+    max-width: 100%;
+    color: var(--primary);
+    font-size: 33px;
+  }  
+  .content h2 {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 16px;
+  }
+  
+  .content button {
+    margin-top: 40px;
+  }
+}

@@ -11,13 +11,15 @@
     --accent: #F08700;
     --dark-green: #09342c;
     --light-accent: #ECA847;
+    --light-green: #308a78;
     --white: #ffffff;
+    --transparent-white: rgba(255,255,255,.6);
 
     --text-font: "Nunito", sans-serif;
     --title-font: "Montserrat", sans-serif;
-}
 
-body {
+    --section-padding-y: 100px;
+    --section-padding-x: 0px;
 }
 
 .content {
@@ -25,15 +27,16 @@ body {
     max-width: 1200px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--title-font);
     margin: 0;
     color: var(--text);
 }
 
-p, button, a, span {
+p, button, span {
     font-family: var(--text-font);
     margin: 0;
+    color: var(--text);
 }
 
 button {
@@ -44,4 +47,12 @@ button {
 
 img {
     margin: 0;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+ :root {
+    --section-padding-y: 60px;
+    --section-padding-x: 10px;
+ }   
 }

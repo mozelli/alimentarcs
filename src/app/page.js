@@ -1,3 +1,4 @@
+import Bonus from "./components/bonus/page";
 import Hero from "./components/hero/page";
 import Info from "./components/info/page";
 import './globals.css';
@@ -8,6 +9,7 @@ export default function Home() {
     <main>
       <Hero />
       <Info />
+      <Bonus />
     </main>
   )
 }
