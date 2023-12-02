@@ -15,12 +15,11 @@
 
 .container h2 {
     text-align: center;
-    font-size: 31px;
     color: var(--accent);
 }
 
 .container h3 {
-    margin-top: 30px;
+    margin-top: 28px;
     text-align: center;
     color: var(--white);
     margin-bottom: 30px;
@@ -39,33 +38,42 @@
     border-radius: 10px 0 0 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     width: 50%;
     padding: 30px;
     background: linear-gradient(to right, var(--primary) 30%, var(--dark-green) 70%);
 }
 
 .card img {
+    display: block;
     max-width: 30%;
     border-radius: 10px;
     margin-right: 20px;
+    transition: transform 0.5s ease;
+}
+
+.card img:hover {
+    transform: scale(1.1);
 }
 
 .info {
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .info h4 {
-    margin: 0 0 10px 0;
     color: var(--accent);
     text-align: left;
-    font-size: 23px;
 }
 
 .info p {
     color: var(--transparent-white);
+    transition: color 0.5s ease;
+}
+
+.info p:hover {
+    color: var(--white);
 }
 
 .container button {
@@ -106,11 +114,16 @@
 
     .card {
         width: 100%;
+        flex-wrap: wrap;
     }
 
     .card img {
         max-width: 100%;
         margin-right: 0;
+    }
+
+    .info {
+        max-width: 100%;
     }
 
     .info h4 {
