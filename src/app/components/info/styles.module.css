@@ -6,6 +6,7 @@ section.container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .content img {
@@ -71,7 +72,6 @@ section.container {
       margin-top: 30px;
       color: var(--primary);
       font-weight: 500;
-      font-size: 24px;
     }
 
     .content button {
